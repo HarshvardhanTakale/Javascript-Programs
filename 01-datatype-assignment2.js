@@ -28,7 +28,7 @@ var count="Hundred and Seven ";
 console.log("Total Count is:",count);
 var countTypeof = typeof count;
 console.log("Total Count Datatype is:",countTypeof);
-console.log("************************** 1****************************8");
+console.log("************************** 2****************************8");
 var count = 107;
 console.log("Update Total Count is:",count);
 var countTypeof = typeof count;
