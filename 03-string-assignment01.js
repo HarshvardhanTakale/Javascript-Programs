@@ -1,4 +1,3 @@
-var dream = "TCS";
 console.log(`My Dream Company is :${"TCS"}`);
 var hobby1="Reading";
 var hobby2="Coding";
