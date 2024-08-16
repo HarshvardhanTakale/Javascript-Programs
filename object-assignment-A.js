@@ -40,6 +40,8 @@ for (const key in professor) {
         console.log(`${key}, ${element}`);
     }
 }
+console.log("**************************************************************************");
+
 
 
 
