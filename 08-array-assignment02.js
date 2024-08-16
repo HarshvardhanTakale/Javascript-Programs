@@ -27,7 +27,40 @@ for (const element of array4) {
         console.log(` Odd number is : ${element}`);
     }
 }
- console.log("============= 6 , 7 , 8 - ignore  ====================");
+ console.log("============= 6 - all element  even positioned element sum  ====================");
+ const array11 = [20,31,40,25,23,11,29,9,60,2,11]
+ console.log(array11);
+ var addition = 0;
+ for (let index = 0; index < array11.length; index++) {
+    if (index %2 ==0) {
+        const element = array11[index];
+        addition = addition + element;
+    }
+ }
+ console.log(` Total even element sum is :${addition}`);
+ 
+ console.log("============= 7 - all element  odd positioned element sum ====================");
+ const array12 = [20,31,40,25,23,11,29,9,60,2,11]
+ console.log(array12);
+ var addition = 0;
+ for (let index = 1; index < array12.length; index++) {
+    if (index %2 ==1) {
+        const element = array12[index];
+        addition = addition + element;
+    }
+ }
+ console.log(` Total odd element sum is :${addition}`);
+
+ console.log("============= 8 - sum of all element  ====================");
+ const array10 = [20,31,40,25,23,11,29,9,60,2,11]
+ console.log(array10);
+ let sum = 0;
+ for (const element of array10) {
+    sum = sum + element;
+    
+ }
+ console.log(` sum of all element  is : ${sum}`);
+
  console.log("============= 9 - find  number which are multiple 5 ====================");
  const array5 = [20,31,40,25,23,11,29,9,60,2,11]
  console.log(array5);
