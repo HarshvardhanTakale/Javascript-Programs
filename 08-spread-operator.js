@@ -32,3 +32,4 @@ for (const element of arrayTen) {
     sum = sum + element;   
 }
 console.log(sum);
+

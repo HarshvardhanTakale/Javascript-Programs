@@ -1,0 +1,104 @@
+console.log("===================== 1 - find length and total char in  the string =================");
+const str1 ="Hello , World!";
+const length1 = str1.length;
+console.log(`The string is : "${str1}" && Length is : ${length1}`);
+console.log("----------------------------------------------------------------------------------");
+const str2 ="Javascript is the language of Internet";
+const length2 = str2.length;
+console.log(`The string is : "${str2}" && Length is : ${length2}`);
+console.log("====================== 2 - log the last char in the string ======================");
+function getLastCharacter(str){
+    return str.charAt(str.length-1)
+}
+const str3 ="Hey, my friend, programming language";
+const str4 ="I am learning logical program";
+const str5 = "Angular";
+console.log(`Given String 1 is : "${str3}"`);
+console.log(`The last character of the string is : ${getLastCharacter(str3)}`);
+console.log("----------------------------------------------------------------------------------");
+console.log(`Given String 2 is : "${str4}"`);
+console.log(`The last character of the string is : ${getLastCharacter(str4)}`);
+console.log("----------------------------------------------------------------------------------");
+console.log(`Given String 3 is : "${str5}"`);
+console.log(`The last character of the string is : ${getLastCharacter(str5)}`);
+console.log("====================== 3 - log the first char in the string ======================");
+function getFirstCharacter(str){
+    return str.charAt(0)
+}
+const str6 ="React";
+const str7 ="Elon Musk";
+const str8 = "Apple founder is Stew Job";
+console.log(`Given String 1 is : "${str6}"`);
+console.log(`The First character of the string is : ${getFirstCharacter(str6)}`)
+console.log("----------------------------------------------------------------------------------");
+console.log(`Given String 2 is : "${str7}"`);
+console.log(`The First character of the string  is : ${getFirstCharacter(str7)}`);
+console.log("----------------------------------------------------------------------------------");
+console.log(`Given String 3 is : "${str8}"`);
+console.log(`The First character of the string is : ${getFirstCharacter(str8)}`);
+console.log("====================== 4 - check given Strings contain word ui or not ======================");
+function containsUI(str){
+    return str.includes("UI");
+}
+const str9 ="React - UI Developer";
+const str10 ="UI Developer";
+const str11 ="Frontend and Backend Technologies";
+console.log(`Given String 1 is : "${str9}"`);
+console.log(`Does the string  contain "UI" ?  ${containsUI(str9)} `);
+console.log("----------------------------------------------------------------------------------");
+console.log(`Given String 2 is : "${str10}"`);
+console.log(`Does the string  contain "UI" ?  ${containsUI(str10)} `);
+console.log("----------------------------------------------------------------------------------");
+console.log(`Given String 3 is : "${str11}"`);
+console.log(`Does the string  contain "UI" ?  ${containsUI(str11)} `);
+console.log("====================== 5 - split a string into an array of substring ======================");
+function splitString(str,delimiter){
+    return str.split(delimiter);
+}
+const str12 = "apple,orange,banana";
+const str13 = "Stew,Bill,Jenny,Elon";
+const result1= splitString(str12,",");
+console.log(`"${str12}"`);
+console.log(`The array of substring from  is :`,result1);
+console.log("----------------------------------------------------------------------------------");
+const result2= splitString(str13,",");
+console.log(`"${str13}"`);
+
+console.log(`The array of substring from  is :`,result2);
+console.log("====================== 6 Reverse  the String  ======================");
+console.log("====================== 1 - using predefined method Reverse String  ======================");
+function reverseStringUsingMethod(str){
+    return str.split('').reverse().join('')
+}
+const str14 = "Software";
+const str15 ="UI Developer";
+console.log(`The string is : "${str14}" && Reverse is :${reverseStringUsingMethod(str14)}`);
+console.log("----------------------------------------------------------------------------------");
+console.log(`The string is : "${str15}" && Reverse is :${reverseStringUsingMethod(str15)}`);
+console.log("====================== 2 - without using predefined methodReverse String  ======================");
+function reverseStringManually(str){
+    let reversed ="";
+    for (let i=str.length-1;i>=0 ; i--) {
+        reversed +=str[i];
+    }
+    return reversed ;
+}
+
+const str16 = "Web Developer";
+const str17 = "Billion Dollar ";
+const str18 = "Java";
+console.log(`The string is : "${str16}" && Reverse is :${reverseStringManually(str16)}`);
+console.log("----------------------------------------------------------------------------------");
+console.log(`The string is : "${str17}" && Reverse is :${reverseStringManually(str17)}`);
+
+
+
+
+
+
+
+
+
+
+
+
