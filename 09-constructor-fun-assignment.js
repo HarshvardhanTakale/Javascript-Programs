@@ -20,11 +20,11 @@ console.log(` Bank Details : Bank Name = ${axisBank.bankName} || Location = ${ax
 
 Bank.prototype.openTime="9 AM IST ";
 Bank.prototype.closeTime="6 PM IST ";
-console.log(`============================================ log opentime and close time on sbiBank  ===============================================`);
+console.log(`===================================== log opentime and close time on sbiBank  ==================================`);
 console.log(`SBI Bank open At : ${sbiBank.openTime} And Close  At : ${sbiBank.closeTime}`  );
-console.log(`============================================ log bankName and close time on  axisBank ===============================================`);
+console.log(`====================================== log bankName and close time on  axisBank ==========================`);
 console.log(`Bank Name: ${axisBank.bankName} , Close At : ${axisBank.closeTime}`);
-console.log(`============================================ log bankName,branchCode,openTime on yesBank ===============================================`);
+console.log(`====================================== log bankName,branchCode,openTime on yesBank ===========================`);
 console.log(`Bank Name: ${yesBank.bankName} || Branch Code : ${yesBank.brachCode} ||  Open At : ${yesBank.openTime} `);
 
 
