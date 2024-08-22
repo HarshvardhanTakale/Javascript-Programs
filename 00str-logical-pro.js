@@ -90,7 +90,67 @@ const str18 = "Java";
 console.log(`The string is : "${str16}" && Reverse is :${reverseStringManually(str16)}`);
 console.log("----------------------------------------------------------------------------------");
 console.log(`The string is : "${str17}" && Reverse is :${reverseStringManually(str17)}`);
+console.log("====================== 7- count the character a and A   ======================");
+function countCharA(str){
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i].toLowerCase () ==="a") {
+            count++;
+        }
+    }
+    return count;
+}
+const str19="JavaScript";
+console.log(`The count of 'a' & 'A' in "${str19}" is = ${countCharA(str19)}`);
+const str20 ="Do or Die";
+console.log(`The count of 'a' & 'A' in "${str20}" is = ${countCharA(str20)}`);
 
+const str21 ="Learn with us, job with us";
+console.log(`The count of 'a' & 'A' in "${str21}" is = ${countCharA(str21)}`);
+
+const str22 ="Empowering Dreams,Guaranteeing Futures";
+console.log(`The count of 'a' & 'A' in "${str22}" is = ${countCharA(str22)}`);
+
+const str23 ="Anny,My favorite is Apple";
+console.log(`The count of 'a' & 'A' in "${str23}" is = ${countCharA(str23)}`);
+
+console.log("====================== 8- count the vowels   ======================");
+function vowelsCount(str){
+    let count =0 ;
+    const vowels = 'aeiouAEIOU';
+    for (let i = 0; i<str.length; i++) {
+        if (vowels.includes(str[i])) {
+            count++;
+        }
+    }
+    return count;
+}
+const str24 ="JavaScript";
+console.log(`String is = "${str24}" And Vowels is = ${vowelsCount(str24)}`);
+const str25 ="HTML and CSS";
+console.log(`String is = "${str25}" And Vowels is = ${vowelsCount(str25)}`);
+
+const str26 ="Language of Internet";
+console.log(`String is = "${str26}" And Vowels is = ${vowelsCount(str26)}`);
+
+const str27 ="I am UI Developer";
+console.log(`String is = "${str27}" And Vowels is = ${vowelsCount(str27)}`);
+
+const str28 ="Do or Die";
+console.log(`String is = "${str28}" And Vowels is = ${vowelsCount(str28)}`);
+console.log("====================== 9- count the word   ======================");
+function wordCount(str){
+    const word = str.trim().split(" ");
+    return word.length;
+}
+const str29 = "JavaScript The language of internet";
+console.log(`String is = "${str29}" And Word of count is = ${wordCount(str29)}`);
+const str30 ="Enhance your learning journey with Exclusive Add-ons";
+console.log(`String is = "${str30}" And Word of count is = ${wordCount(str30)}`);
+const str31 = "Beyond frameworks, Beyond imagination";
+console.log(`String is = "${str31}" And Word of count is = ${wordCount(str31)}`);
+const str32 = "I am passionate software developer ";
+console.log(`String is = "${str32}" And Word of count is = ${wordCount(str32)}`);
 
 
 
