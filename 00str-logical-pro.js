@@ -151,7 +151,31 @@ const str31 = "Beyond frameworks, Beyond imagination";
 console.log(`String is = "${str31}" And Word of count is = ${wordCount(str31)}`);
 const str32 = "I am passionate software developer ";
 console.log(`String is = "${str32}" And Word of count is = ${wordCount(str32)}`);
-
+console.log("====================== 10 - find the duplicate characters  ======================");
+function duplicateCharcount(str){
+    const charCount = {};
+    for (let i = 0; i < str.length; i++) {
+        const char = str[i];
+        if (char != " ") {
+            charCount[char]=(charCount[char] || 0) +1;
+        }
+    }
+    for (const char in charCount) {
+        if (charCount[char] > 1) {
+            console.log(`${char} - ${charCount[char]}`);
+            
+        }
+    }
+}
+console.log(`Duplicate characters in "Banana" And count is `);
+duplicateCharcount("Banana");
+console.log(" ");
+console.log(`Duplicate characters in "Apple" And count is `);
+duplicateCharcount("Apple");
+console.log(" ");
+console.log(`Duplicate characters in "Software Developer" And count is `);
+duplicateCharcount("Software Developer");
+console.log(" ");
 
 
 
