@@ -23,7 +23,7 @@ function oddPositionedChars(sentence) {
     for (let i = 0; i <=sentence.length; i++) {
         if (i%2==1 && sentence.charAt(i)!=" ") {
 
-            console.log(`characters at odd position ${i} =sentence.charAt(sentence)`);  
+            console.log(`characters at odd position ${i} = ${sentence.charAt(i)}`);  
 
         }
 

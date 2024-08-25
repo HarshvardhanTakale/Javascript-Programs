@@ -1,20 +1,18 @@
-
-
-// Function to check if a number is prime
+const array = [3, 9, 7, 6, 19, 29, 53];
 function isPrime(num) {
-    if (num <= 1) return false;
-    if (num <= 3) return true;
-    if (num % 2 === 0 || num % 3 === 0) return false;
-    for (let i = 5; i * i <= num; i += 6) {
-        if (num % i === 0 || num % (i + 2) === 0) return false;
-    }
-    return true;
+  if (num <= 1) return false;
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) return false;
+  }
+  return true;
 }
 
-// Array of numbers
-const array = [3, 9, 7, 19, 29, 53];
+let primeCount = 0;
+for (const num of array) {
+  if (isPrime(num)) {
+    primeCount++;
+  }
+}
+console.log(array);
 
-// Count the number of prime numbers in the array
-const primeCount = array.filter(isPrime).length;
-
-console.log(primeCount); // Output: 4
+console.log(`${primeCount}  ${num}`);
