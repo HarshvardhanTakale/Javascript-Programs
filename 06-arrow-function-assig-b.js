@@ -46,7 +46,7 @@ for (const element of array) {
 
     }
 }
-console.log("==================== 6 ====================");
+console.log("==================== 6 ==========================");
 for (const element of array) {
     if (element.emp_company=="Infy") {
         console.log(`Employee Id : ${element.emp_id} ,Employee Name : ${element.emp_name} , Employee Department : ${element.emp_dept} , Employee salary : ${element.emp_salary} , Company Name : ${element.emp_company}`);
