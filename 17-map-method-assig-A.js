@@ -14,7 +14,7 @@ const arrayQube = arrayNumbers.map((element)=>{
     return element * element*element;
 });
 console.log(arrayQube);
-console.log(` ==== 3- Add index array   ===== `);
+console.log(`======== ==== 3- Add index array   ===== `);
 console.log(arrayNumbers);
 const addIndex = arrayNumbers.map((element,index)=>{
     return element + index ;
