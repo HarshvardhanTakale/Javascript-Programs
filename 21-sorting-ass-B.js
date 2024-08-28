@@ -32,7 +32,7 @@ for (const element of arrayEmpSort) {
     console.log(`${element.emp_id}  || ${element.emp_dept} || ${element.emp_company}`); 
 }
 
-console.log(`======================== 3 ============================`);
+console.log(`======================== 3 ===============================`);
 const arrayEmpSorting = arrayEmployee.sort((e1, e2)=>{
     return e1.emp_salary>e2.emp_salary ? -1 : 1;
 });
