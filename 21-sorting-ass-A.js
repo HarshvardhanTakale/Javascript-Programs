@@ -26,7 +26,7 @@ console.log("======================== 5 ======================");
 console.log(arrayRollNumbers);
 const smallestNumber = Math.min(...arrayRollNumbers);
 console.log(`  Smallest number from the   array is : ${smallestNumber}`);
-console.log("======================== 6 ======================");
+console.log("======================== 6 ==========================");
 console.log(arrayRollNumbers);
 console.log(` After Removing duplicate element`);
 const Array = [];
